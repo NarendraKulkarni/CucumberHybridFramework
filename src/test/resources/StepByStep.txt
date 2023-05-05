@@ -1,0 +1,15 @@
+Step By Step Cucumber Hybrid Framework
+1) Create new source folder src/test/resources
+2) Under src/test/resources create feature package 
+3) Under feature package, Create new file Login.feature -> To recognize .feature extension,  "Cucumber" plugin to be installed from Eclipse marketplace
+4) Delete all content from Login.feature file and save
+5) Right click project> configure > convert to cucumber project
+6) When steps are highlighted it means they are not yet implemented 
+7)User scenarios are created using feature files hence 3 files created respectively for login register and search
+8)Create new package with name as "stepdefinitions" under src/test/java
+9)Create Login.java class inside stepdefinitions package similarly create register.java and search.java
+10)Create method for "Given" statement and specify "@Given" on top of method and import cucumber library in pom.xml file
+11)Compare io.cucumber cucumver-java, iocucumber cucumber junit and iocucumber cuucmber-core and find common version  and copy to pom.xml
+12)Right click login feature file and run as Cucumber Feature then from console copy snippet methods into login.java and repeat for register and search feature files
+13)Add pretty word to runner file for additing test lines from feature file in console logs.
+
